@@ -10,6 +10,10 @@ def meaning(user_input):
     if user_input in data:
         output = data.get(user_input)
         return output
+    elif user_input.title() in data:
+        return data[user_input.title()]
+    elif user_input.upper() in data:
+        return data[user_input.upper()]
     else:
         close_match = difflib.get_close_matches(user_input, data)
         if len(close_match) > 0:

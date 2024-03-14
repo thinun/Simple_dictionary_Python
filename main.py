@@ -10,9 +10,9 @@ def meaning(user_input):
     if user_input in data:
         output = data.get(user_input)
         return output
-    elif user_input.title() in data:
+    elif user_input.title() in data:      # identifying Cities
         return data[user_input.title()]
-    elif user_input.upper() in data:
+    elif user_input.upper() in data:      # for words like the USA , NASA
         return data[user_input.upper()]
     else:
         close_match = difflib.get_close_matches(user_input, data)

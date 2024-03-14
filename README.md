@@ -2,7 +2,7 @@
 
 Simple Dictionary Application
 
-Description:
+Description:  
 This Python script implements a simple dictionary application that allows users to search for the meanings of words. The dictionary data is loaded from a JSON file, and the program provides suggestions for similar words if the exact match is not found.
 
 Features:
